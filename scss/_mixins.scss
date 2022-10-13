@@ -1,0 +1,25 @@
+@mixin replace-text{
+    text-indent:101%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+@mixin w-md {
+    @media (max-width:768px){
+        @content;
+    }
+}
+
+@mixin w-sm{
+    @media (max-width: 576px) {
+        @content;
+    }
+}
+
+@mixin iphone6{
+    @media (max-width: 375px) {
+        @content;
+    }
+}
+
+

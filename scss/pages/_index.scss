@@ -1,0 +1,237 @@
+.wrap{
+    margin: 0 auto;
+    max-width: 1024px;
+    position: relative;
+}
+
+// social 區塊
+.social{
+    display: flex;
+    justify-content: end;
+    background-color: #F5F4FA;
+    
+    .link{
+        padding: 5px 10px;
+
+        a{
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+        }
+
+        .fa-brands{
+            margin-left: 5px;
+        }
+
+        .fa-square-facebook{
+            color: #3D579E;
+            
+        }
+
+        .fa-square-facebook::after{
+            content: '';
+            border-left: 1px solid gray;
+            margin-left: 5px;
+        }
+        
+        .fa-square-twitter{
+            color: #008EE5;
+        }
+    }
+}
+
+// header 區塊
+.header{
+    display: flex; 
+    justify-content: space-between;
+
+    h1{
+        @include replace-text;
+        background-image: url(../images/logo.png);
+        background-repeat: no-repeat;
+        width: 224px;    
+    }
+}
+.menu{
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    a{
+        text-decoration: none;
+        color: #00CC99;
+        display: block;
+        padding: 12px;
+        border-bottom: 2.5px solid rgba($color: #000000, $alpha: 0);
+
+        &:hover{
+            border-bottom: 2.5px solid #00CC99; 
+        }
+
+        &:focus{
+            background-color: #00cc99;
+            color: white;
+        }
+    }
+    
+}
+
+.dropToggle   {
+    position: absolute;
+    display: none;
+    background-color: white;
+    z-index: 100;
+
+    li a{
+        padding: 12px;
+        border-bottom: 1px solid #00CC99;
+
+        &:hover{
+            background-color: #00cc99;
+            color: white;
+            border-bottom: 1px solid #00cc99;
+        }
+
+        &:active{
+            background-color: #029b75;
+            border-bottom: 1px solid #029b75;
+        }
+    }
+}
+
+// banner 區塊
+.banner{
+    position: relative;
+}
+.bannerText{
+    position: absolute;
+    z-index: 100;
+    background-color: rgba($color: #000000, $alpha: 0.4);
+    top:20%;
+    width: 100%;
+    
+    h2{
+        color: white;
+        font-size: 36px;
+        padding: 40px 30px;
+    }
+}
+// banner 輪播區塊大小
+.swiper {
+    max-width: 1024px;
+    height: 350px;
+}
+// banner 輪播圖片
+.swiper-slide{
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    @include iphone6{
+        background-position: center;
+    }
+}
+.banner01{
+    background-image: url(../images/banner01.png);
+}
+.banner02{
+    background-image: url(../images/banner02.png);
+}
+.banner03{
+    background-image: url(../images/banner03.png);
+}
+
+// skill 區塊
+.skill-container{
+    display: flex;
+
+    @include w-sm{
+        flex-wrap: wrap;
+    }
+    
+    .skill-item{
+        width: 33%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        box-shadow: 0.5px 2px 2px 1px rgba(0, 0, 0, 0.2);
+        padding: 20px;
+        margin: 30px 10px 20px 10px;
+
+        img{
+            max-width: 150px;
+        }
+
+        .skill-text h2{
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .skill-text p{
+            text-align: left;
+        }
+
+        .skill-text ul li{
+            list-style-type: disc;
+        }
+
+        @include w-sm{
+            width: 100%;
+        }
+    }
+}
+
+
+// footer
+.footer{
+    background-color: rgb(241, 241, 241);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 40px 20px;
+
+    a{
+        text-decoration: none;
+        color: rgb(220, 21, 147);
+    }
+
+    img{
+        height: 36px;
+        margin-right: 20px;
+    }
+
+    @media(max-width:493px) {
+    
+        .footer-contact {
+                margin-top: 20px;
+            }
+    }
+}
+
+//goTop
+.goTop a{
+    position: fixed;
+    bottom: 5%;
+    right: 2%;
+    z-index: 999;
+
+    display: block;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%; 
+
+    color: white;
+    font-size: 30px;
+    background: #00cc99;
+    text-align: center;
+    box-shadow: 1px 1px 5px 1px rgb(174, 174, 174);
+
+    &:hover{
+        background: #6eeacb;
+    }
+    &:active{
+        background: #16755d;
+    }
+       
+            
+}
