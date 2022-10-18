@@ -37,12 +37,22 @@ $(document).ready(function(){
     'wrapAround': true
   });
 
+  // 隱藏goTop按鈕，當視窗滑到下方時才顯示
+  function showBtnCondition(){
+    if ($(this).scrollTop() > 1000) {
+      $('#goTop').fadeIn();
+        } else {
+         $('#goTop').fadeOut();
+       }
+    };
+  $(window).scroll(showBtnCondition);
 
   //goTop
   $('.goTop').click(function(e){
     e.preventDefault();
     $('html,body').animate({scrollTop: 0},1000);
   });
+
 
 })
 

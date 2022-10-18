@@ -453,6 +453,119 @@ body.lb-disable-scrolling {
   }
 }
 
+.table {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 30px;
+}
+
+.table table {
+  width: 80%;
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+.table tr th {
+  text-align: left;
+}
+
+.table tr {
+  border-bottom: rgba(128, 128, 128, 0.332) 1.5px solid;
+  height: 40px;
+}
+
+.table .table-font-color {
+  color: #00CC99;
+}
+
+.form {
+  background: -webkit-gradient(linear, left top, left bottom, from(#00654b), to(#009871));
+  background: linear-gradient(to bottom, #00654b, #009871);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 35px 0px;
+}
+
+.form h3 {
+  color: white;
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form .form-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 90%;
+  color: white;
+}
+
+.form .form-content textarea {
+  -webkit-box-flex: 0.5;
+      -ms-flex-positive: 0.5;
+          flex-grow: 0.5;
+  resize: none;
+  margin-right: 15px;
+}
+
+.form .form-content form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 0.5;
+      -ms-flex-positive: 0.5;
+          flex-grow: 0.5;
+}
+
+.form .form-content form button {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  padding: 5px 20px;
+  color: white;
+  background-color: #00cc99;
+  border: none;
+  cursor: pointer;
+}
+
+.form .form-content form button:hover {
+  background-color: #57f1ca;
+}
+
+.form .form-content form button:active {
+  background-color: white;
+  color: #00cc99;
+}
+
+.form .form-content form input {
+  margin-bottom: 10px;
+  height: 30px;
+  padding-left: 5px;
+}
+
 .footer {
   background-color: #f1f1f1;
   display: -webkit-box;
@@ -464,6 +577,9 @@ body.lb-disable-scrolling {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   padding: 40px 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .footer a {

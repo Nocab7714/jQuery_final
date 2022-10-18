@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <!-- 指定螢幕寬度為裝置寬度，畫面載入初始縮放比例 100% -->
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <!-- author -->
@@ -62,7 +61,7 @@
         <!-- Slider main container -->
         <div class="banner swiper">
             <div class="bannerText">
-                <h2>
+                <h2> 
                     六角學院<br>
                     讓您奠定良好的前端基礎
                 </h2>
@@ -115,6 +114,70 @@
                 </li>
             </ul>
         </div>
+        <!-- table -->
+        <div class="table">
+            <h2>線上及實體課程的差異</h2>
+            <table>
+                <tr>
+                    <th>項目</th>
+                    <th>Hex School 線上課程</th>
+                    <th>一般線上課程</th>
+                    <th>實體課程</th>
+                </tr>
+                <tr>
+                    <td>費用</td>
+                    <td class="table-font-color">較低</td>
+                    <td class="table-font-color">較低</td>
+                    <td>較高</td>
+                </tr>
+                <tr>
+                    <td>學習效果</td>
+                    <td>一般</td>
+                    <td class="table-font-color">較低</td>
+                    <td class="table-font-color">很好</td>
+                </tr>
+                <tr>
+                    <td>Code review</td>
+                    <td class="table-font-color">有</td>
+                    <td>無</td>
+                    <td>不一定</td>
+                </tr>
+                <tr>
+                    <td>課程更新速度</td>
+                    <td class="table-font-color">普通</td>
+                    <td class="table-font-color">普通</td>
+                    <td>較慢</td>
+                </tr>
+                <tr>
+                    <td>多次複習</td>
+                    <td class="table-font-color">可</td>
+                    <td>可</td>
+                    <td>不可</td>
+                </tr>
+                <tr>
+                    <td>字幕</td>
+                    <td class="table-font-color">有</td>
+                    <td>不一定</td>
+                    <td>板書</td>
+                </tr>
+            </table>
+        </div>
+        <!-- form -->
+        <div class="form">
+            <h3>對於我們的課程有興趣嗎?<br>歡迎留下你的資料</h3>
+            <div class="form-content">
+                <textarea name="formdata" id="suggestion" placeholder="歡迎在這留下你的意見"></textarea>
+                <form action="">
+                    <label for="name">姓名</label>
+                    <input type="text" name="name" id="name" placeholder="你的姓名">
+                    <label for="PhoneNmber">電話</label>
+                    <input type="tel" name="PhoneNmber" id="PhoneNmber" placeholder="0987-087987">
+                    <label for="email">信箱</label>
+                    <input type="email" name="email" id="email" placeholder="請輸入你的信箱">
+                    <button type="submit">送出</button>
+                </form>                      
+            </div>
+        </div>
         <div class="footer">
             <img src="./images/footerLogo.png" alt="footerLogo">
             <div class="footer-contact">
@@ -123,7 +186,7 @@
             </div>
         </div>
         <!-- goTop -->
-        <div class="goTop">
+        <div class="goTop" id="goTop">
             <a href="#" title="點此向上到頁面頂部"><i class="fa-sharp fa-solid fa-upload"></i></a>
         </div>
     </div>
