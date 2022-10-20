@@ -39,10 +39,10 @@ $(document).ready(function(){
 
   // 隱藏goTop按鈕，當視窗滑到下方時才顯示
   function showBtnCondition(){
-    if ($(this).scrollTop() > 1000) {
-      $('#goTop').fadeIn();
+    if ($(this).scrollTop() > 350) {
+      $('.goTop a').fadeIn();
         } else {
-         $('#goTop').fadeOut();
+         $('.goTop a').fadeOut();
        }
     };
   $(window).scroll(showBtnCondition);

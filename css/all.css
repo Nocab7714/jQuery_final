@@ -603,7 +603,7 @@ body.lb-disable-scrolling {
   bottom: 5%;
   right: 2%;
   z-index: 999;
-  display: block;
+  display: none;
   width: 55px;
   height: 55px;
   border-radius: 50%;

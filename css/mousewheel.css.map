@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../js/swiper-8.4.3/modules/mousewheel/mousewheel.scss"
+    ],
+    "names": [],
+    "file": "mousewheel.css"
+}
